@@ -1,13 +1,19 @@
 function Postar(){
 
-    const username = document.querySelector(".username").value
-    const post = document.querySelector(".post").value
+    var username = document.querySelector(".username").value
+    var post = document.querySelector(".post").value
     const postArea = document.getElementById("posts-container")
 
-    const newPost = document.createElement("div");
-    newPost.setAttribute('class', 'new-post');
+    if(username.trim() !== '' && post.trim() !== ''){
 
-    newPost.innerHTML = `<strong>${username}</strong> <p>${post}</p>`;
+        const newPost = document.createElement("div");
+        newPost.setAttribute('class', 'new-post');
 
-    postArea.appendChild(newPost);
+        newPost.innerHTML = `<strong>${username}</strong> <p>${post}</p>`;
+
+        postArea.appendChild(newPost);
+
+        document.querySelector(".username").value = ' ';
+        document.querySelector(".post").value = ' ';
+    }
 }
