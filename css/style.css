@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: beige;
+}
+
+input[type="text"]{
+    width: 40rem;
+    padding: 10px;;
+    margin:5px auto;
+}
+
+button {
+    width: 10rem;
+    padding: 5px;
+    background-color: lightseagreen;
+    color:white;
+    margin: 5px auto;
+}
+
+.feed{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50rem;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.post{
+    width: 40rem;
+    padding: 5px 10px 45px 10px;
+    margin:5px auto;
+}
+
+.posts-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.new-post{
+    width: 50rem;
+    padding: 30px;
+    background-color: white;
+    text-align: left;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
